@@ -46,8 +46,35 @@ useHead({
   htmlAttrs: {
     prefix: 'og: https://ogp.me/ns#',
   },
-  meta: [{ name: 'theme-color', content: '#ffb41d' }],
-  link: [{ rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  meta: [
+    { name: 'theme-color', content: '#ffb41d' },
+    { name: 'application-name', content: config.public.siteName },
+    { name: 'apple-mobile-web-app-title', content: config.public.siteName },
+    { name: 'msapplication-Config', content: '/browserconfig.xml' },
+    { name: 'msapplication-TileColor', content: '#ffb41d' },
+  ],
+  link: [
+    { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
+    { rel: 'manifest', href: '/site.webmanifest' },
+    { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#a83d3d' },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      href: '/favicon-32x32.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      href: '/favicon-16x16.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      href: '/apple-touch-icon.png',
+    },
+  ],
   script: isDevelopment
     ? []
     : [
