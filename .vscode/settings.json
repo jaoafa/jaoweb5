@@ -1,0 +1,16 @@
+{
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "stylelint.validate": ["css", "postcss", "scss", "vue"],
+  "tailwindCSS.includeLanguages": {
+    "vue": "html"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[javascript][javascriptreact][typescript][typescriptreact][css][scss][json][yaml][html][vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}
