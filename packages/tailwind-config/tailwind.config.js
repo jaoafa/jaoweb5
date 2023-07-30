@@ -14,6 +14,32 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          50: '#fff8e2',
+          100: '#ffecb5',
+          200: '#ffe086',
+          300: '#ffd556',
+          400: '#ffca34',
+          500: '#ffc122',
+          600: '#ffb41d',
+          700: '#fea11b',
+          800: '#fe9119',
+          900: '#fd7217',
+        },
+        secondary: {
+          50: '#fce4ec',
+          100: '#f8bbd0',
+          200: '#f48fb0',
+          300: '#f06291',
+          400: '#ec4079',
+          500: '#e91e63',
+          600: '#d81b5f',
+          700: '#c2185a',
+          800: '#ad1356',
+          900: '#880d4e',
+        },
+      },
       fontFamily: {
         sans: [
           'Hiragino Sans',
