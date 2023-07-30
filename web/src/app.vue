@@ -5,6 +5,7 @@
     <AppProvider>
       <TheHeader />
       <NuxtPage />
+      <TheFooter />
     </AppProvider>
   </Body>
   <TheSeo />
