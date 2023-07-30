@@ -1,8 +1,11 @@
 <template>
   <SeoKit />
-  <Body>
+  <Body class="bg-white text-gray-700">
     <NuxtLoadingIndicator :height="2" color="#ffb41d" />
-    <NuxtPage />
+    <AppProvider>
+      <TheHeader />
+      <NuxtPage />
+    </AppProvider>
   </Body>
   <TheSeo />
 </template>

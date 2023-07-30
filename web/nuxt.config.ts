@@ -34,7 +34,7 @@ export default defineNuxtConfig({
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://jaoafa.com',
       siteName: 'jao Community Server',
       siteDescription:
-        'jao Community Server は、やべーやつらが生息し独特で最高にイカしたコミュニティです。',
+        'ここで爆発します、あなたの可能性が。jao Community Server は、やべーやつらが生息し独特で最高にイカしたコミュニティです。',
       language: 'ja',
       trailingSlash: true,
       gtm: 'GTM-58VVRGD',

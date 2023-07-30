@@ -138,6 +138,12 @@ importers:
 
   web:
     devDependencies:
+      '@fontsource/lexend':
+        specifier: 5.0.5
+        version: 5.0.5
+      '@fontsource/noto-sans-jp':
+        specifier: 5.0.5
+        version: 5.0.5
       '@headlessui/vue':
         specifier: 1.7.15
         version: 1.7.15(vue@3.3.4)
@@ -1205,6 +1211,14 @@ packages:
   /@eslint/js@8.46.0:
     resolution: {integrity: sha512-a8TLtmPi8xzPkCbp/OGFUo5yhRkHM2Ko9kOWP4znJr0WAhWyThaw3PnwX4vOTWOAMsV2uRt32PPDcEz63esSaA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  /@fontsource/lexend@5.0.5:
+    resolution: {integrity: sha512-0Fr7Q6MsChpE3YBTTnMrDJvMJG4x6hOaLYdd3PaUKFq0ii7GYiEq1LkUU60/g7HhGcCawrrc0bOGN9kaDfLUvQ==}
+    dev: true
+
+  /@fontsource/noto-sans-jp@5.0.5:
+    resolution: {integrity: sha512-ixFlbHEtu2pqGkGv+H8qxWvP7VEiavp72OslASRq+sbCPxgFvAYuMpetQkavrr3qVZQciROdb/Hpor/tQ5c1PQ==}
+    dev: true
 
   /@hapi/hoek@9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
