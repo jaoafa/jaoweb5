@@ -12,30 +12,31 @@ const isHovered = ref<boolean>(false)
 </script>
 
 <template>
-  <section class="-mb-12 bg-gray-100 pt-20 text-center md:-mb-20">
+  <section class="-mb-12 bg-gray-100 pt-20 text-center sm:-mb-16 lg:-mb-20">
     <div
       :class="[
         'flex flex-col items-center gap-10',
         'm-auto box-content max-w-6xl px-4 md:px-6',
       ]"
     >
-      <h2 class="font-accent text-6xl font-black">
+      <h2 class="font-accent text-6xl font-black lg:text-7xl">
         {{ props.title }}
       </h2>
+
       <div class="flex flex-col gap-4 text-sm leading-relaxed">
         <slot />
       </div>
+
       <div
         :class="[
-          'w-1/2 transition-transform md:w-1/3',
-          isHovered
-            ? 'translate-y-12 sm:translate-y-16 md:translate-y-20 lg:translate-y-32'
-            : '',
+          'w-1/2 transition-transform md:w-2/5 lg:w-1/3',
+          isHovered ? 'translate-y-12 md:translate-y-20' : '',
         ]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494.82 500.02">
           <path
             d="m252.3,0l-41.13,37.91c-22.86,21.14-44.69,43.89-70.43,61.58l-4.02,2.76c-17.92,12.52-50.44,29.53-72.04,49.4C25.16,188.07,0,235.06,0,292.97c0,125.92,133.5,208.41,248.62,207.03,44.69-.57,105.12-12.64,157.28-48.94,48.02-33.43,88.47-84.56,88.92-156.48,0-39.87-10.57-75.48-32.63-105.7-24.01-33.2-59.74-58.94-59.74-58.94L252.3,0Z"
+            class="cursor-pointer"
             style="fill: #e74c3c"
             @mouseover="() => (isHovered = true)"
             @mouseleave="() => (isHovered = false)"
