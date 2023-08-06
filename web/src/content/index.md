@@ -6,3 +6,17 @@ description: ここで爆発します、あなたの可能性が。jao Community
 ::hero-section
 ここで爆発します、あなたの可能性が。
 ::
+
+::top-intro-section
+---
+title: Welcome to jao
+---
+jao Community Server は、Discord を中心に活動をしているコミュニティです。  
+このコミュニティにはやべーやつらが生息し、独特で最高にイカしたコミュニティをつくっています。
+
+――誰かここの文章考えてくれ。
+::
+
+:top-gallery-section
+
+:top-blog-section
