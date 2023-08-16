@@ -3,6 +3,7 @@ type LayoutDefaultSlots = {
   default?: (props: object) => unknown
 }
 
+const { page } = useContent()
 const route = useRoute()
 
 /** トップページであるか */
@@ -18,7 +19,12 @@ defineSlots<LayoutDefaultSlots>()
     </template>
 
     <template v-else>
-      <slot />
+      <component
+        :is="page?.list ? 'div' : 'article'"
+        class="mx-auto box-content max-w-3xl pb-10 pt-24 md:pb-16 md:pt-36"
+      >
+        <slot />
+      </component>
     </template>
   </main>
 </template>
