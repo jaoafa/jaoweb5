@@ -1,5 +1,7 @@
 <script lang="ts" setup>
+// Types
 import type { SimpleIcon } from 'simple-icons'
+// Icons
 import { siDiscord, siGithub, siTwitter, siYoutube } from 'simple-icons'
 
 type SocialLinksProps = {

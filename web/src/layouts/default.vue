@@ -24,9 +24,10 @@ defineSlots<LayoutDefaultSlots>()
         class="mx-auto box-content max-w-3xl pb-10 pt-24 md:pb-16 md:pt-36"
       >
         <ArticleHeader />
-        <div class="mt-10">
+        <div class="mb-8 mt-10">
           <slot />
         </div>
+        <ArticleFooter />
       </component>
     </template>
   </main>
