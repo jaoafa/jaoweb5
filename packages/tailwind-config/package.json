@@ -4,7 +4,8 @@
   "private": true,
   "license": "UNLICENSED",
   "dependencies": {
-    "@headlessui/tailwindcss": "0.2.0"
+    "@headlessui/tailwindcss": "0.2.0",
+    "@tailwindcss/typography": "0.5.9"
   },
   "devDependencies": {
     "eslint": "8.47.0",

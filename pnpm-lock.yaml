@@ -97,6 +97,9 @@ importers:
       '@headlessui/tailwindcss':
         specifier: 0.2.0
         version: 0.2.0(tailwindcss@3.3.3)
+      '@tailwindcss/typography':
+        specifier: 0.5.9
+        version: 0.5.9(tailwindcss@3.3.3)
     devDependencies:
       eslint:
         specifier: 8.47.0
@@ -150,6 +153,9 @@ importers:
       '@heroicons/vue':
         specifier: 2.0.18
         version: 2.0.18(vue@3.3.4)
+      '@hiratake/social-share':
+        specifier: 1.0.4
+        version: 1.0.4(vue@3.3.4)
       '@nuxt/content':
         specifier: 2.7.2
         version: 2.7.2
@@ -1468,6 +1474,17 @@ packages:
       vue: 3.3.4
     dev: true
 
+  /@hiratake/social-share@1.0.4(vue@3.3.4):
+    resolution: {integrity: sha512-VzjtVlzyZ6yMcSRzyToI2tmaA7Ahzu9Xm53ubBHJBgSZblBHSMSKJvuJDtn9xPXIsyX22tV0KbJJvEguUmWeEA==}
+    peerDependencies:
+      vue: ^3.3.0
+    dependencies:
+      '@vueuse/core': 10.3.0(vue@3.3.4)
+      vue: 3.3.4
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: true
+
   /@humanwhocodes/config-array@0.11.10:
     resolution: {integrity: sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==}
     engines: {node: '>=10.10.0'}
@@ -2272,6 +2289,18 @@ packages:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
     dev: true
 
+  /@tailwindcss/typography@0.5.9(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-t8Sg3DyynFysV9f4JDOVISGsjazNb48AeIYQwcL+Bsq5uf4RYL75C1giZ43KISjeDGBaTN3Kxh7Xj/vRSMJUUg==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 3.3.3(ts-node@10.9.1)
+    dev: false
+
   /@textlint-rule/textlint-rule-no-unmatched-pair@1.0.9:
     resolution: {integrity: sha512-uUZhMWs+4ZIXIDfmQcfKdSx17Yx/eGdEUSDs/0UCggzy1nGOi5GMNHo6sUV3NSjSx22vTySj1imsBaBZCyCWNA==}
     dependencies:
@@ -2582,10 +2611,6 @@ packages:
 
   /@types/node@20.4.7:
     resolution: {integrity: sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==}
-
-  /@types/node@20.4.8:
-    resolution: {integrity: sha512-0mHckf6D2DiIAzh8fM8f3HQCvMKDpK94YQ0DSVkfWTG9BZleYIWudw9cJxX8oCk9bM+vAkDyujDV6dmKHbvQpg==}
-    dev: true
 
   /@types/node@20.5.0:
     resolution: {integrity: sha512-Mgq7eCtoTjT89FqNoTzzXg2XvCi5VMhRV6+I2aYanc6kQCBImeNaAYRs/DyoVqk1YEUJK5gN9VO7HRIdz4Wo3Q==}
@@ -6428,7 +6453,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.4.8
+      '@types/node': 20.5.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
@@ -6730,6 +6755,10 @@ packages:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
     dev: true
 
+  /lodash.castarray@4.4.0:
+    resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
+    dev: false
+
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
     dev: true
@@ -6756,7 +6785,6 @@ packages:
 
   /lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
-    dev: true
 
   /lodash.kebabcase@4.1.1:
     resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
@@ -9153,6 +9181,14 @@ packages:
       postcss: ^8.4.19
     dependencies:
       postcss: 8.4.28
+    dev: false
+
+  /postcss-selector-parser@6.0.10:
+    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
     dev: false
 
   /postcss-selector-parser@6.0.13:
@@ -11886,7 +11922,7 @@ packages:
     dependencies:
       '@types/node': 20.5.0
       esbuild: 0.18.20
-      postcss: 8.4.27
+      postcss: 8.4.28
       rollup: 3.28.0
       sass: 1.65.1
     optionalDependencies:

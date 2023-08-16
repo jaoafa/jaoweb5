@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+// Fonts
 import '@fontsource/noto-sans-jp/400.css'
 import '@fontsource/noto-sans-jp/700.css'
 import '@fontsource/lexend/400.css'
