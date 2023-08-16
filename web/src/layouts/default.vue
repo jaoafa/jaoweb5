@@ -21,7 +21,7 @@ defineSlots<LayoutDefaultSlots>()
     <template v-else>
       <component
         :is="page?.list ? 'div' : 'article'"
-        class="mx-auto box-content max-w-3xl pb-10 pt-24 md:pb-16 md:pt-36"
+        class="mx-auto box-content max-w-3xl px-4 pb-10 pt-24 md:pb-16 md:pt-36"
       >
         <ArticleHeader />
         <div class="prose my-10 max-w-none md:my-12">
