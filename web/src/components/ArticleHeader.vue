@@ -49,7 +49,7 @@ const { page } = useContent()
             aria-label="カテゴリ"
           />
         </dt>
-        <dd>{{ page.category }}</dd>
+        <dd>{{ useCategory({ slug: page.category }).value?.name }}</dd>
       </div>
     </dl>
 
