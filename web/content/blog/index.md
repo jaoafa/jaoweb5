@@ -9,5 +9,7 @@ list: true
 ---
 query:
   - blog
+filter-category: true
+filter-author: true
 ---
 ::

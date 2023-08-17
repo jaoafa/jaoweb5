@@ -69,6 +69,15 @@ const filteredArticles = computed(
 
 <template>
   <div class="not-prose my-10 grid gap-6 md:my-12">
+    <ContentListHeader
+      v-if="props.filterAuthor || props.filterCategory"
+      v-model:author="selectedAuthorFilter"
+      v-model:category="selectedCategoryFilter"
+      :content="articles"
+      :enable-author="props.filterAuthor"
+      :enable-category="props.filterCategory"
+    />
+
     <template v-if="filteredArticles.length">
       <ul class="grid grid-cols-fill-56 gap-6">
         <template v-for="item in filteredArticles" :key="item._path">

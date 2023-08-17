@@ -14,7 +14,7 @@ const { page } = useContent()
     <h1 class="text-3xl font-bold">{{ page?.title }}</h1>
     <dl
       v-if="page?.created || page?.updated || page?.category"
-      class="mt-4 flex gap-5 text-xs text-gray-500"
+      class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-gray-500"
     >
       <div v-if="page?.created" class="inline-flex items-center gap-2">
         <dt>
