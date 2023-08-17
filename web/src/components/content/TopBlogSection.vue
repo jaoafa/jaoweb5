@@ -23,6 +23,7 @@ import { ArrowRightCircleIcon } from '@heroicons/vue/24/solid'
           <ArrowRightCircleIcon class="z-10 h-5 w-5" aria-hidden="true" />
         </NuxtLink>
       </div>
+      <ContentList :query="['blog']" :limit="4" />
     </div>
   </section>
 </template>
