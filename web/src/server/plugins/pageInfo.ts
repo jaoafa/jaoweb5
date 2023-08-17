@@ -1,13 +1,13 @@
 // Types
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import type { PageInfo } from '../../modules/pageInfo'
+import type { Article } from '@/types'
+import type { PageInfo } from '@/modules/pageInfo'
 // Utils
 import { existsSync, readFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 
 export default defineNitroPlugin((nitroApp) => {
   // @ts-expect-error: https://github.com/nuxt/content/issues/2177
-  nitroApp.hooks.hook('content:file:afterParse', (result: ParsedContent) => {
+  nitroApp.hooks.hook('content:file:afterParse', (result: Article) => {
     if (
       !result._id.endsWith('.md') ||
       !result.body ||
