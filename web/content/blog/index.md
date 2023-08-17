@@ -5,4 +5,9 @@ updated: null
 list: true
 ---
 
-ブログ
+::content-list
+---
+query:
+  - blog
+---
+::
