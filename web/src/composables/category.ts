@@ -16,6 +16,18 @@ const categories: Category[] = [
     name: 'お知らせ',
     slug: 'news',
   },
+  {
+    name: 'イベント',
+    slug: 'event',
+  },
+  {
+    name: 'Discord',
+    slug: 'discord',
+  },
+  {
+    name: 'Minecraft',
+    slug: 'minecraft',
+  },
 ]
 
 /**

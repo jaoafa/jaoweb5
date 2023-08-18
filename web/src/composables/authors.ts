@@ -15,9 +15,29 @@ export type UseAuthorOptions = {
 /** 著者情報の配列 */
 const authors: Author[] = [
   {
-    name: 'Hiratake',
+    name: 'ひらたけ',
     slug: 'hiratake',
     icon: '/icons/hiratake.webp',
+  },
+  {
+    name: 'Tomachi',
+    slug: 'tomachi',
+    icon: '/icons/tomachi.webp',
+  },
+  {
+    name: 'オムレツ',
+    slug: 'omelet',
+    icon: '/icons/omelet.webp',
+  },
+  {
+    name: 'コホナ',
+    slug: 'kohonayoshi',
+    icon: '/icons/kohonayoshi.webp',
+  },
+  {
+    name: 'えきぱ',
+    slug: 'ekipa',
+    icon: '/icons/ekipa.webp',
   },
 ]
 
