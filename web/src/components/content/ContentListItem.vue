@@ -41,15 +41,15 @@ const props = withDefaults(defineProps<ContentListItemProps>(), {
       'border-gray-200 hover:border-primary-600',
     ]"
   >
-    <article class="flex flex-col justify-between gap-3">
-      <h2 class="line-clamp-2 h-[3.5em] font-bold leading-tight">
+    <article class="flex flex-col justify-between gap-4">
+      <h2 class="line-clamp-2 h-[2.5em] font-bold leading-tight">
         {{ props.title }}
       </h2>
 
       <div class="flex items-center justify-between gap-2">
         <dl
           v-if="props.created || props.updated || props.category"
-          class="flex flex-col gap-y-2 text-xs text-gray-500"
+          class="flex flex-col gap-1 text-xs text-gray-500"
         >
           <div v-if="props.created" class="inline-flex items-center gap-1">
             <dt>
