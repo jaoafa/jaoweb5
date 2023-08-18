@@ -16,7 +16,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <footer>
+  <footer v-if="page">
     <div class="grid grid-cols-1 gap-2">
       <div class="text-center text-xs">SNSでこのページをシェアする</div>
       <div class="flex items-center justify-center gap-1">
