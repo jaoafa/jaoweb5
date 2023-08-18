@@ -12,7 +12,7 @@ const isDevelopment = process.env.NODE_ENV === 'development'
 /** 構造化データ */
 const schema = await useAsyncData('schema-org', () => {
   // パンくずリストを生成
-  const items: string[] = page.value._path
+  const items: string[] = (page.value?._path || '')
     // 現在のパスをスラッシュで区切って配列にする
     .split('/')
     // 配列から空の項目を削除
@@ -40,6 +40,10 @@ const schema = await useAsyncData('schema-org', () => {
     }),
   ] as ReturnType<typeof defineBreadcrumb>[]
 })
+
+if (page.value) {
+  useSchemaOrg(schema)
+}
 
 defineSlots<TheSeoSlots>()
 useHead({
@@ -96,7 +100,6 @@ useServerSeoMeta({
   ogType: route.path === '/' ? 'website' : 'article',
   ogImage: `${config.public.siteUrl}/ogp.png`,
 })
-useSchemaOrg(schema)
 </script>
 
 <template>
