@@ -40,15 +40,20 @@ const emits = defineEmits<ContentListHeaderEmits>()
 /** 著者リスト */
 const authors = computed(() => [
   { name: '全て', slug: 'all' },
-  ...new Set(
-    props.content
-      .filter((article) => article?.author)
-      .flatMap((article) => {
-        const author = useAuthor({ slug: article.author }).value
-        return author ? { name: author.name, slug: author.slug } : []
-      }),
-  ),
+  ...[
+    ...new Set(
+      props.content.flatMap((article) =>
+        article?.author ? article.author : [],
+      ),
+    ),
+  ].flatMap((item) => {
+    const author = useAuthor({ slug: item })
+    return author.value
+      ? { name: author.value.name, slug: author.value.slug }
+      : []
+  }),
 ])
+
 /** 現在選択中の著者情報 */
 const modelAuthor = computed({
   get: () =>
@@ -60,14 +65,18 @@ const modelAuthor = computed({
 /** カテゴリリスト */
 const categories = computed(() => [
   { name: '全て', slug: 'all' },
-  ...new Set(
-    props.content
-      .filter((article) => article?.category)
-      .flatMap((article) => {
-        const category = useCategory({ slug: article.category }).value
-        return category ? { name: category.name, slug: category.slug } : []
-      }),
-  ),
+  ...[
+    ...new Set(
+      props.content.flatMap((article) =>
+        article?.category ? article.category : [],
+      ),
+    ),
+  ].flatMap((item) => {
+    const category = useCategory({ slug: item })
+    return category.value
+      ? { name: category.value.name, slug: category.value.slug }
+      : []
+  }),
 ])
 /** 現在選択中のカテゴリ情報 */
 const modelCategory = computed({
