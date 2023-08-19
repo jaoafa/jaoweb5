@@ -154,8 +154,8 @@ importers:
         specifier: 2.0.18
         version: 2.0.18(vue@3.3.4)
       '@hiratake/social-share':
-        specifier: 1.0.4
-        version: 1.0.4(vue@3.3.4)
+        specifier: 1.0.5
+        version: 1.0.5(vue@3.3.4)
       '@nuxt/content':
         specifier: 2.7.2
         version: 2.7.2
@@ -1480,8 +1480,8 @@ packages:
       vue: 3.3.4
     dev: true
 
-  /@hiratake/social-share@1.0.4(vue@3.3.4):
-    resolution: {integrity: sha512-VzjtVlzyZ6yMcSRzyToI2tmaA7Ahzu9Xm53ubBHJBgSZblBHSMSKJvuJDtn9xPXIsyX22tV0KbJJvEguUmWeEA==}
+  /@hiratake/social-share@1.0.5(vue@3.3.4):
+    resolution: {integrity: sha512-fHHKDSLTEM0tB2yfmJnV4qnKxuxzV5K73t/3ookPEgCsBx/hrLpGmUcARQAQLuFI47GEBuMM01gYFlrLKio3lw==}
     peerDependencies:
       vue: ^3.3.0
     dependencies:
