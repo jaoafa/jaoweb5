@@ -7,7 +7,7 @@
     "node": ">=16.10.0"
   },
   "volta": {
-    "node": "18.17.0"
+    "node": "18.17.1"
   },
   "devDependencies": {
     "@commitlint/cli": "17.7.1",
@@ -15,15 +15,15 @@
     "eslint": "8.47.0",
     "eslint-config-custom": "workspace:*",
     "husky": "8.0.3",
-    "lint-staged": "14.0.0",
+    "lint-staged": "14.0.1",
     "prettier": "3.0.2",
     "prettier-plugin-tailwindcss": "0.5.3",
-    "stylelint": "15.10.2",
+    "stylelint": "15.10.3",
     "stylelint-config": "workspace:*",
     "textlint": "13.3.3",
     "textlint-filter-rule-allowlist": "4.0.0",
     "textlint-rule-preset-custom": "workspace:*",
-    "turbo": "1.10.12"
+    "turbo": "1.10.13"
   },
   "scripts": {
     "build": "turbo run build",
