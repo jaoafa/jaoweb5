@@ -83,7 +83,7 @@ const filteredArticles = computed(
         <template v-for="item in filteredArticles" :key="item._path">
           <li>
             <ContentListItem
-              :url="item._path"
+              :url="item._path?.endsWith('/') ? item._path : `${item._path}/`"
               :title="item.title"
               :created="item.created"
               :updated="item.updated"
