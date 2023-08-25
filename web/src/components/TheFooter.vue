@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 const config = useRuntimeConfig()
+const app = useAppConfig()
 const year = useDateFormat(useNow(), 'YYYY')
 </script>
 
@@ -21,6 +22,44 @@ const year = useDateFormat(useNow(), 'YYYY')
         </NuxtLink>
 
         <SocialLinks />
+      </div>
+
+      <div>
+        <ul class="grid grid-cols-fill-40 gap-x-8 gap-y-6">
+          <li
+            v-for="item in app.navigation"
+            :key="item.to"
+            class="flex flex-col items-start gap-3"
+          >
+            <NuxtLink
+              :to="item.to"
+              :class="[
+                'relative pb-1',
+                'after:absolute after:bottom-0 after:left-0',
+                'after:block after:h-0.5 after:w-full',
+                'after:origin-right after:bg-primary-600',
+                'after:scale-x-0 after:scale-y-100 after:transition-transform',
+                'hover:after:origin-left hover:after:scale-x-100',
+              ]"
+            >
+              <span class="text-sm font-bold">{{ item.label }}</span>
+            </NuxtLink>
+
+            <ul
+              v-if="item.children.length"
+              class="flex flex-col items-start gap-2"
+            >
+              <li v-for="child in item.children" :key="child.to">
+                <NuxtLink
+                  :to="child.to"
+                  class="block transition-opacity hover:opacity-70"
+                >
+                  <span class="text-xs">{{ child.label }}</span>
+                </NuxtLink>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </nav>
 

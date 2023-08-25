@@ -1,5 +1,5 @@
 ---
-title: 方針
+title: 運営方針
 created: null
 updated: null
 list: true
