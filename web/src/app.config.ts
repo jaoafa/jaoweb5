@@ -14,4 +14,21 @@ export default defineAppConfig({
       url: 'https://www.youtube.com/channel/UC92wyJyhqXEMiEROeFJKNKg',
     },
   },
+  navigation: [
+    {
+      label: 'ブログ',
+      to: '/blog/',
+      children: [],
+    },
+    {
+      label: '運営方針',
+      to: '/policy/',
+      children: [
+        {
+          label: 'プライバシーポリシー',
+          to: '/policy/privacy/',
+        },
+      ],
+    },
+  ],
 })
