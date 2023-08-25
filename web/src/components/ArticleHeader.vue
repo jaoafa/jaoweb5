@@ -16,12 +16,9 @@ const { page } = useContent()
       v-if="page?.created || page?.updated || page?.category"
       class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-gray-500"
     >
-      <div v-if="page?.created" class="inline-flex items-center gap-2">
+      <div v-if="page?.created" class="meta-item">
         <dt>
-          <CalendarDaysIcon
-            class="h-3.5 w-3.5 translate-y-[0.1em]"
-            aria-label="投稿日"
-          />
+          <CalendarDaysIcon class="meta-icon" aria-label="投稿日" />
         </dt>
         <dd>
           <time :datetime="useDateFormat(page.created, 'YYYY-MM-DD').value">
@@ -29,12 +26,9 @@ const { page } = useContent()
           </time>
         </dd>
       </div>
-      <div v-if="page?.updated" class="inline-flex items-center gap-2">
+      <div v-if="page?.updated" class="meta-item">
         <dt>
-          <ArrowPathIcon
-            class="h-3.5 w-3.5 translate-y-[0.1em]"
-            aria-label="更新日"
-          />
+          <ArrowPathIcon class="meta-icon" aria-label="更新日" />
         </dt>
         <dd>
           <time :datetime="useDateFormat(page.updated, 'YYYY-MM-DD').value">
@@ -42,12 +36,9 @@ const { page } = useContent()
           </time>
         </dd>
       </div>
-      <div v-if="page?.category" class="inline-flex items-center gap-2">
+      <div v-if="page?.category" class="meta-item">
         <dt>
-          <TagIcon
-            class="h-3.5 w-3.5 translate-y-[0.1em]"
-            aria-label="カテゴリ"
-          />
+          <TagIcon class="meta-icon" aria-label="カテゴリ" />
         </dt>
         <dd>{{ useCategory({ slug: page.category }).value?.name }}</dd>
       </div>
@@ -73,3 +64,13 @@ const { page } = useContent()
     </ul>
   </header>
 </template>
+
+<style scoped>
+.meta-item {
+  @apply inline-flex items-center gap-2;
+}
+
+.meta-icon {
+  @apply h-3.5 w-3.5 translate-y-[0.1em];
+}
+</style>
