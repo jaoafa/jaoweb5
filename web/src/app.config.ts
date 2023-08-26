@@ -30,5 +30,23 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      label: 'サポート',
+      to: '/support/',
+      children: [
+        {
+          label: 'お問い合わせ',
+          to: '/support/inquiry/',
+        },
+        {
+          label: 'よくあるご質問',
+          to: '/support/faq/',
+        },
+        {
+          label: '運営者情報',
+          to: '/support/about/',
+        },
+      ],
+    },
   ],
 })
