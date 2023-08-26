@@ -11,7 +11,7 @@ import {
 // Icons
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/24/solid'
 
-type ContentListHeaderProps = {
+type ArticleListHeaderProps = {
   /** コンテンツデータを指定します */
   content?: Article[]
   /** 著者でのフィルターの現在の選択内容を指定します */
@@ -23,19 +23,19 @@ type ContentListHeaderProps = {
   /** カテゴリでのフィルタを使用します */
   enableCategory?: boolean
 }
-type ContentListHeaderEmits = {
-  'update:author': [ContentListHeaderProps['author']]
-  'update:category': [ContentListHeaderProps['category']]
+type ArticleListHeaderEmits = {
+  'update:author': [ArticleListHeaderProps['author']]
+  'update:category': [ArticleListHeaderProps['category']]
 }
 
-const props = withDefaults(defineProps<ContentListHeaderProps>(), {
+const props = withDefaults(defineProps<ArticleListHeaderProps>(), {
   content: () => [],
   author: 'all',
   enableAuthor: false,
   category: 'all',
   enableCategory: false,
 })
-const emits = defineEmits<ContentListHeaderEmits>()
+const emits = defineEmits<ArticleListHeaderEmits>()
 
 /** 著者リスト */
 const authors = computed(() => [

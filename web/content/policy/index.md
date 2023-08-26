@@ -5,7 +5,7 @@ updated: null
 list: true
 ---
 
-::content-list
+::article-list
 ---
 query:
   - policy
