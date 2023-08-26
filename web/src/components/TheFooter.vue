@@ -47,7 +47,7 @@ const year = useDateFormat(useNow(), 'YYYY')
 
             <ul
               v-if="item.children.length"
-              class="flex flex-col items-start gap-2"
+              class="flex flex-col items-start gap-0.5"
             >
               <li v-for="child in item.children" :key="child.to">
                 <NuxtLink
