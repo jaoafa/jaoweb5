@@ -4,7 +4,7 @@ import type { Article } from '@/types'
 // Icons
 import { FaceFrownIcon } from '@heroicons/vue/24/outline'
 
-type ContentListProps = {
+type ArticleListProps = {
   /** 記事を取得するクエリを指定します */
   query: string[]
   /** 著者でのフィルタを使用します */
@@ -15,7 +15,7 @@ type ContentListProps = {
   limit?: number
 }
 
-const props = withDefaults(defineProps<ContentListProps>(), {
+const props = withDefaults(defineProps<ArticleListProps>(), {
   filterAuthor: false,
   filterCategory: false,
   limit: undefined,
@@ -23,7 +23,7 @@ const props = withDefaults(defineProps<ContentListProps>(), {
 
 /** コンテンツ一覧 */
 const articles = await useAsyncData(
-  `content-list-${(() => props.query.join('-'))()}`,
+  `article-list-${(() => props.query.join('-'))()}`,
   () => {
     const [query, ...pathParts] = props.query
     if (props.limit) {
@@ -69,7 +69,7 @@ const filteredArticles = computed(
 
 <template>
   <div class="not-prose my-10 grid gap-6 md:my-12">
-    <ContentListHeader
+    <ArticleListHeader
       v-if="props.filterAuthor || props.filterCategory"
       v-model:author="selectedAuthorFilter"
       v-model:category="selectedCategoryFilter"
@@ -82,7 +82,7 @@ const filteredArticles = computed(
       <ul class="grid grid-cols-fill-56 gap-6">
         <template v-for="item in filteredArticles" :key="item._path">
           <li>
-            <ContentListItem
+            <ArticleListItem
               :url="item._path?.endsWith('/') ? item._path : `${item._path}/`"
               :title="item.title"
               :created="item.created"

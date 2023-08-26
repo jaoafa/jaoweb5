@@ -8,7 +8,7 @@ import {
   TagIcon,
 } from '@heroicons/vue/24/solid'
 
-type ContentListItemProps = {
+type ArticleListItemProps = {
   /** URLを指定します */
   url: Article['_path']
   /** タイトルを指定します */
@@ -23,7 +23,7 @@ type ContentListItemProps = {
   author: Article['author']
 }
 
-const props = withDefaults(defineProps<ContentListItemProps>(), {
+const props = withDefaults(defineProps<ArticleListItemProps>(), {
   url: '',
   title: '',
   created: '',
