@@ -5,6 +5,7 @@
   "editor.tabSize": 2,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
+  "git.branchProtection": ["main"],
   "scss.lint.unknownAtRules": "ignore",
   "stylelint.validate": ["css", "postcss", "scss", "vue"],
   "tailwindCSS.includeLanguages": {
