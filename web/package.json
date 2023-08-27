@@ -32,7 +32,7 @@
     "textlint": "13.3.3",
     "textlint-filter-rule-allowlist": "4.0.0",
     "textlint-rule-preset-custom": "workspace:*",
-    "typescript": "5.1.6",
+    "typescript": "5.2.2",
     "vue-tsc": "1.8.8"
   },
   "scripts": {
