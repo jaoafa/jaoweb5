@@ -2,7 +2,7 @@
   "name": "jaoweb5-monorepo",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@8.7.0",
   "engines": {
     "node": ">=16.10.0"
   },
@@ -12,7 +12,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
-    "eslint": "8.47.0",
+    "eslint": "8.48.0",
     "eslint-config-custom": "workspace:*",
     "husky": "8.0.3",
     "lint-staged": "14.0.1",
