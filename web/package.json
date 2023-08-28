@@ -14,7 +14,7 @@
     "@nuxt/kit": "3.6.5",
     "@nuxtjs/eslint-module": "4.1.0",
     "@nuxtjs/stylelint-module": "5.1.0",
-    "@types/node": "20.5.6",
+    "@types/node": "20.5.7",
     "@vueuse/nuxt": "10.4.0",
     "autoprefixer": "10.4.15",
     "eslint": "8.48.0",
