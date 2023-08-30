@@ -4,8 +4,8 @@
   "private": true,
   "license": "UNLICENSED",
   "devDependencies": {
-    "@fontsource/lexend": "5.0.9",
-    "@fontsource/noto-sans-jp": "5.0.8",
+    "@fontsource/lexend": "5.0.11",
+    "@fontsource/noto-sans-jp": "5.0.10",
     "@headlessui/vue": "1.7.16",
     "@heroicons/vue": "2.0.18",
     "@hiratake/social-share": "1.0.5",
