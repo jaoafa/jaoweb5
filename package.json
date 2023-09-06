@@ -2,7 +2,7 @@
   "name": "jaoweb5-monorepo",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.7.0",
+  "packageManager": "pnpm@8.7.4",
   "engines": {
     "node": ">=16.10.0"
   },
@@ -17,7 +17,7 @@
     "husky": "8.0.3",
     "lint-staged": "14.0.1",
     "prettier": "3.0.3",
-    "prettier-plugin-tailwindcss": "0.5.3",
+    "prettier-plugin-tailwindcss": "0.5.4",
     "stylelint": "15.10.3",
     "stylelint-config": "workspace:*",
     "textlint": "13.3.3",
