@@ -2,7 +2,7 @@
   "name": "jaoweb5-monorepo",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@8.7.4",
+  "packageManager": "pnpm@8.7.5",
   "engines": {
     "node": ">=16.10.0"
   },
@@ -12,7 +12,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
-    "eslint": "8.48.0",
+    "eslint": "8.49.0",
     "eslint-config-custom": "workspace:*",
     "husky": "8.0.3",
     "lint-staged": "14.0.1",
@@ -23,7 +23,7 @@
     "textlint": "13.3.3",
     "textlint-filter-rule-allowlist": "4.0.0",
     "textlint-rule-preset-custom": "workspace:*",
-    "turbo": "1.10.13"
+    "turbo": "1.10.14"
   },
   "scripts": {
     "build": "turbo run build",
